@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mltest"
+version = "0.1.0"
+description = "Demo project to test machine learning model"
+authors = ["Chongze Jiao"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tensorflow = {version = "^2.11.0", python = ">=3.10,<3.12"}
+tensorflow-datasets = "^4.8.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
